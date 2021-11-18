@@ -1,6 +1,6 @@
 {
-  "name": "hello-vue",
-  "version": "0.0.0",
+  "name": "katong-inv",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
