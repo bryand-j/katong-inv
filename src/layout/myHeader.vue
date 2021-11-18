@@ -1,4 +1,10 @@
-<script></script>
+<script>
+export default {
+	props:{
+		breadcrumb:{type:String,default:''}
+	}
+}
+</script>
 
 <template>
 	<div id="kt_header" class="header" data-kt-sticky="true" data-kt-sticky-name="header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
@@ -7,15 +13,15 @@
 			<!--begin::Page title-->
 			<div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-lg-2 pb-2 pb-lg-0" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
 				<!--begin::Heading-->
-				<h1 class="text-dark fw-bolder my-1 fs-2">Selamat Datang
+				<h1 class="text-dark fw-bolder my-1 fs-2">Katong-Inv
 				<small class="text-muted fs-6 fw-normal ms-1"></small></h1>
 				<!--end::Heading-->
 				<!--begin::Breadcrumb-->
 				<ul class="breadcrumb fw-bold fs-base my-1">
 					<li class="breadcrumb-item text-muted">
-						<a href="index.html" class="text-muted">Home</a>
+						<a href="#" class="text-muted">Home</a>
 					</li>
-					<li class="breadcrumb-item text-dark">Dashboard</li>
+					<li class="breadcrumb-item text-dark">{{breadcrumb}}</li>
 				</ul>
 				<!--end::Breadcrumb-->
 			</div>
