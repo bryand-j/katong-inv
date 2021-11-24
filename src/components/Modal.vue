@@ -28,12 +28,11 @@ export default {
 				</div>
 
 				<div class="modal-body">
-					<slot></slot>
+					<slot name="content"/>
 				</div>
 
 				<div class="modal-footer border-0">
-					<button type="button" class="btn btn-light" data-bs-dismiss="modal">Batal</button>
-					<button type="button" class="btn btn-primary">Buat</button>
+					<slot name="footer"/>
 				</div>
 			</div>
 		</div>
